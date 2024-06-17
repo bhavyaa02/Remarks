@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d7d6e4;
+    margin: 0;
+    padding: 0;
+    color: #2c2c7c;
+}
+
+h1, h2 {
+    color: #2c2c7c;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    background-color: #342cac;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.filters input[type="radio"] {
+    display: none;
+}
+
+.filters input[type="radio"]:checked + label {
+    background-color: #0056b3;
+}
+
+/* Company Dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Contact Remarks */
+.contact-remarks {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #2c2c7c;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-remarks textarea,
+.contact-remarks input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-remarks button {
+    background-color: #2c2c7c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-remarks button:hover {
+    background-color: #0056b3;
+}
+
+.remarks-list {
+    margin-top: 20px;
+}
+
+.remarks-list > div {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #2c2c7c;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.remarks-list p {
+    margin: 5px 0;
+}
+
+.remarks-list p:first-child {
+    font-weight: bold;
+}
